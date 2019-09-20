@@ -6,8 +6,9 @@ def sort_array_asc(array)
 end
 
 def sort_array_desc(array)
-  array.each_with_index { |a, b, index|
+  ret_array = array.each_with_index.map { |a, b, index|
     b <=> a 
   }
+  return ret_array
 p array
 end 
