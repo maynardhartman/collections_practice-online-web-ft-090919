@@ -6,11 +6,8 @@ def sort_array_asc(array)
 end
 
 def sort_array_desc(array)
-  index = 0
-  
-  a = array[index]
-  b = array[index + 1]
-  if a < b #swap
+  array.each_with_index { |a, b, index|
+    b <=> a 
   }
 p array
 end 
